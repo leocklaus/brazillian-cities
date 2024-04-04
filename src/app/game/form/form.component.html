@@ -1,0 +1,12 @@
+<form [formGroup]="guessForm">
+    <input 
+        type="text" 
+        name="guess" 
+        id="guess" 
+        placeholder="Digite seu palpite..."
+        formControlName="guess"
+    >
+    <button (click)="handleGuess()">
+        Advinhar
+    </button>
+</form>
